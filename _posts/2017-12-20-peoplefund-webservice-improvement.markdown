@@ -3,7 +3,7 @@ layout: post
 title:  "[피플펀드] 웹서비스 성능개선기 "
 subtitle:   "피플펀드"
 categories: review
-tags: event
+tags: algoritm
 comments: true
 ---
 
