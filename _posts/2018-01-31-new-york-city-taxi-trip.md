@@ -19,7 +19,9 @@ comments: true
 보상을 지불하는 형태로 진행되었다.
 
 성과측정치는 다음과 같다.
-### \\(\epsilon =\sqrt { \frac { 1 }{ n } \sum _{ i=1 }^{ n }{ { (log({ p }_{ i }+1)\quad -\quad log({ a }_{ i }+1)) }^{ 2 } }  } \\)
+$$$
+\epsilon =\sqrt { \frac { 1 }{ n } \sum _{ i=1 }^{ n }{ { (log({ p }_{ i }+1)\quad -\quad log({ a }_{ i }+1)) }^{ 2 } }  }
+$$$
 <br/>
 Where:
 
