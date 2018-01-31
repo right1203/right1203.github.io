@@ -2,7 +2,7 @@
 layout: post
 title: "1. New York City Taxi Trip Duration"
 subtitle: "캐글 무작정 따라해보기"
-categories: devlog
+categories: review
 tags: algorithm
 comments: true
 ---
