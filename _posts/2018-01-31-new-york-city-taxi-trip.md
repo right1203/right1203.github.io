@@ -13,22 +13,23 @@ comments: true
 <br/>
 ## 0. Competition Introduction
 ---
-<br/>
-이 대회에서의 목적은 뉴욕에서의 택시 여행 기간을 예측하는 모델을 만드는 것으로서, 
+<p>이 대회에서의 목적은 뉴욕에서의 택시 여행 기간을 예측하는 모델을 만드는 것으로서,
 가장 성과측정치가 좋았던 사람을 뽑는 것보다는 통찰력 있고 사용 가능한 모델을 만드는 사람에게
-보상을 지불하는 형태로 진행되었다.
+보상을 지불하는 형태로 진행되었다.<p/>
+<p>성과측정치는 다음과 같다.<p/>
+<br/>
 
-성과측정치는 다음과 같다.
-$$$
+$$
 \epsilon =\sqrt { \frac { 1 }{ n } \sum _{ i=1 }^{ n }{ { (log({ p }_{ i }+1)\quad -\quad log({ a }_{ i }+1)) }^{ 2 } }  }
-$$$
+$$
+
 <br/>
 Where:
 
 ϵ is the RMSLE value (score) <br/>
 n is the total number of observations in the (public/private) data set, <br/>
-\\( {p}_{i}\\) is your prediction of trip duration, and <br/>
-\\( {a}_{i}\\) is the actual trip duration for ii.  <br/>
+${p}_{i}$ is your prediction of trip duration, and <br/>
+${a}_{i}$ is the actual trip duration for ii.  <br/>
 log(x) is the natural logarithm of x <br/>
 <br/>
 >이 분석은 캐글 대회 [New York City Taxi Trip Duration](http://https://www.kaggle.com/c/nyc-taxi-trip-duration)의 데이터를 이용하여 진행하였으며 <br/>
@@ -38,8 +39,8 @@ log(x) is the natural logarithm of x <br/>
 ```python
 # Library import
 
-import numpy as np 
-import pandas as pd 
+import numpy as np
+import pandas as pd
 import matplotlib.pyplot as plt
 import matplotlib as mpl
 mpl.rcParams['figure.figsize']=(10, 18)
@@ -59,7 +60,7 @@ warnings.filterwarnings('ignore')
 
 
 ```python
-train = pd.read_csv('Input/train.csv', 
+train = pd.read_csv('Input/train.csv',
                     parse_dates=['pickup_datetime'])
 test = pd.read_csv('Input/test.csv',
                    parse_dates=['pickup_datetime'])
@@ -328,9 +329,11 @@ test.head()
 
 
 
-### RMSLE를 사용하여 점수를 매길 것이기 때문에, 위의 성과측정치를 사용하여 실제 여행 기간을 변경한다.
-### \\(\epsilon =\sqrt { \frac { 1 }{ n } \sum _{ i=1 }^{ n }{ { (log({ p }_{ i }+1)\quad -\quad log({ a }_{ i }+1)) }^{ 2 } }  } \\)
+<p>RMSLE를 사용하여 점수를 매길 것이기 때문에, 위의 성과측정치를 사용하여 실제 여행 기간을 변경한다.<p/>
 
+$$\epsilon =\sqrt { \frac { 1 }{ n } \sum _{ i=1 }^{ n }{ { (log({ p }_{ i }+1)\quad -\quad log({ a }_{ i }+1)) }^{ 2 } }  }$$
+
+<br/>
 
 ```python
 train = train.assign(log_trip_duration = np.log(train.trip_duration+1))
@@ -478,9 +481,9 @@ train.head()
 ## 2. Features
 ---
 참고한 커널의 의견에 따르면 중요한 Features는 다음과 같다.
-0. the pickup time (rush hour should cause longer trip duration.)
-0. the trip distance
-0. the pickup location
+1. the pickup time (rush hour should cause longer trip duration.)
+2. the trip distance
+3. the pickup location
 
 ## 2.1. Pickup Time and Weekend Features
 ---
@@ -1269,7 +1272,7 @@ def bearing_array(lat1, lng1, lat2, lng2):
 ```python
 List_dist = []
 for df in (train, test):
-    lat1, lng1, lat2, lng2 = (df['pickup_latitude'].values, df['pickup_longitude'].values, 
+    lat1, lng1, lat2, lng2 = (df['pickup_latitude'].values, df['pickup_longitude'].values,
                               df['dropoff_latitude'].values,df['dropoff_longitude'].values)
     dist = pd.DataFrame(index=range(len(df)))
     dist = dist.assign(haversine_dist = haversine_array(lat1, lng1, lat2, lng2))
@@ -1602,8 +1605,7 @@ for i in range(10):
 ```
 
 
-![png](output_42_0.png)
-
+![output_42_0](https://i.imgur.com/evA8yKl.png)
 
 ## 2.4. Weather Features
 ---
@@ -1850,8 +1852,7 @@ fig = plt.figure(figsize=(18, 8))
 sns.boxplot(x='hour', y='log_trip_duration', data=tmp);
 ```
 
-
-![png](output_51_0.png)
+![output_51_0](https://i.imgur.com/n9eSgRB.png)
 
 
 
@@ -1861,7 +1862,7 @@ sns.violinplot(x='month', y='log_trip_duration', hue='rest_day',
 ```
 
 
-![png](output_52_0.png)
+![output_52_0](https://i.imgur.com/uXYGfMR.png)
 
 
 
@@ -2031,13 +2032,13 @@ tmp.head()
 
 ```python
 sns.violinplot(x="pickup_dropoff_loc", y="log_trip_duration",
-               hue="rest_day", 
-               data=tmp, 
+               hue="rest_day",
+               data=tmp,
                split=True,inner="quart");
 ```
 
 
-![png](output_54_0.png)
+![output_54_0](https://i.imgur.com/T0QUGWk.png)
 
 
 ## 4. XGB Model : the Prediction of trip duration
@@ -2062,4 +2063,3 @@ len(train)
 
 
 이후 아직 진행 중 입니다.
-
