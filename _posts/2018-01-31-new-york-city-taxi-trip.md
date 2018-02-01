@@ -2,8 +2,8 @@
 layout: post
 title: "1. New York City Taxi Trip Duration"
 subtitle: "캐글 무작정 따라해보기"
-categories: review
-tags: algorithm
+categories: study
+tags: kaggle
 comments: true
 ---
 
@@ -19,9 +19,9 @@ comments: true
 <p>성과측정치는 다음과 같다.<p/>
 <br/>
 
-$
+$$
 \epsilon =\sqrt { \frac { 1 }{ n } \sum _{ i=1 }^{ n }{ { (log({ p }_{ i }+1)\quad -\quad log({ a }_{ i }+1)) }^{ 2 } }  }
-$
+$$
 
 <br/>
 Where:
