@@ -19,9 +19,9 @@ comments: true
 <p>성과측정치는 다음과 같다.<p/>
 <br/>
 
-$$
+$
 \epsilon =\sqrt { \frac { 1 }{ n } \sum _{ i=1 }^{ n }{ { (log({ p }_{ i }+1)\quad -\quad log({ a }_{ i }+1)) }^{ 2 } }  }
-$$
+$
 
 <br/>
 Where:
