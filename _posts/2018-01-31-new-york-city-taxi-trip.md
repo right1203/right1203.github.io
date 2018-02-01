@@ -326,9 +326,9 @@ test.head()
 
 
 
-<p>RMSLE를 사용하여 점수를 매길 것이기 때문에, 위의 성과측정치를 사용하여 실제 여행 기간을 변경한다.<p/>
+RMSLE를 사용하여 점수를 매길 것이기 때문에, 위의 성과측정치를 사용하여 실제 여행 기간을 변경한다.
 
-$$\epsilon =\sqrt { \frac { 1 }{ n } \sum _{ i=1 }^{ n }{ { (log({ p }_{ i }+1)\quad -\quad log({ a }_{ i }+1)) }^{ 2 } }  }$$
+$$ \epsilon =\sqrt { \frac { 1 }{ n } \sum _{ i=1 }^{ n }{ { (log({ p }_{ i }+1)\quad -\quad log({ a }_{ i }+1)) }^{ 2 } } } $$
 
 <br/>
 
