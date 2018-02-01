@@ -25,8 +25,8 @@ Where:
 
 ϵ is the RMSLE value (score) <br/>
 n is the total number of observations in the (public/private) data set, <br/>
-$ {p}_{i} $ is your prediction of trip duration, and <br/>
-$ {a}_{i} $ is the actual trip duration for ii.  <br/>
+$$$ {p}_{i} $$$ is your prediction of trip duration, and <br/>
+$$$ {a}_{i} $$$ is the actual trip duration for ii.  <br/>
 log(x) is the natural logarithm of x <br/>
 
 > 이 분석은 캐글 대회 [New York City Taxi Trip Duration](https://www.kaggle.com/c/nyc-taxi-trip-duration)의 데이터를 이용하여 진행하였으며 <br/>
