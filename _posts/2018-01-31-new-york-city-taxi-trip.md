@@ -17,19 +17,16 @@ comments: true
 가장 성과측정치가 좋았던 사람을 뽑는 것보다는 통찰력 있고 사용 가능한 모델을 만드는 사람에게
 보상을 지불하는 형태로 진행되었다.<p/>
 <p>성과측정치는 다음과 같다.<p/>
-<br/>
 
-$$
-\epsilon =\sqrt { \frac { 1 }{ n } \sum _{ i=1 }^{ n }{ { (log({ p }_{ i }+1)\quad -\quad log({ a }_{ i }+1)) }^{ 2 } }  }
-$$
+$$ \epsilon =\sqrt { \frac { 1 }{ n } \sum _{ i=1 }^{ n }{ { (log({ p }_{ i }+1)\quad -\quad log({ a }_{ i }+1)) }^{ 2 } } } $$
 
 <br/>
 Where:
 
 ϵ is the RMSLE value (score) <br/>
 n is the total number of observations in the (public/private) data set, <br/>
-${p}_{i}$ is your prediction of trip duration, and <br/>
-${a}_{i}$ is the actual trip duration for ii.  <br/>
+$ {p}_{i} $ is your prediction of trip duration, and <br/>
+$ {a}_{i} $ is the actual trip duration for ii.  <br/>
 log(x) is the natural logarithm of x <br/>
 <br/>
 >이 분석은 캐글 대회 [New York City Taxi Trip Duration](http://https://www.kaggle.com/c/nyc-taxi-trip-duration)의 데이터를 이용하여 진행하였으며 <br/>
