@@ -156,3 +156,5 @@ event logs의 변수들은 **case id, activity name, timestamp** 의 필수적�
   프로세스 마아닝의 이벤트 로그에는 타임스탬프와 cases, 프로세스의 수행자가 존재.
 * Process mining and data mining need to be combined for more advanced questions.
   프로세스 마이닝과 데이터 마이닝은 합쳐져야 한다.
+
+다음은 Decision Trees를 배워보자.
