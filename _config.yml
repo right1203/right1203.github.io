@@ -18,7 +18,7 @@ tagline:             데이터 분석 초보자
 # A short description of the page, used in the sidebar and as fallback for the meta description tag.
 # Markdown enabled, but don't use more than one paragraph (enforced by `>`)
 description:         >
-  안녕하세요 :)
+  안녕하세요 :) 개인적으로 공부하기 위한 블로그입니다.
 
 # This should be the same author as first entry in `_data/authors.yml`
 author:
@@ -47,7 +47,7 @@ google_fonts:        Lato
 google_analytics:    UA-113880039-1
 
 # Setting a disqus shortname will enable the comment section on pages with `comments: true` in the front matter
-#disqus_shortname:    
+disqus_shortname: right1203
 
 # This text will appear in the footer of every page. Markdown enabled.
 copyright:           '&copy; 2018. by YH'
