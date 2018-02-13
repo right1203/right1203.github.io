@@ -1,3 +1,11 @@
+---
+layout: post
+title: "2. Leaf Classification"
+subtitle: "캐글 무작정 따라해보기"
+categories: study
+tags: kaggle
+comments: true
+---
 
 # [Leaf Classification](https://www.kaggle.com/c/leaf-classification)
 ---
