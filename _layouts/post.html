@@ -1,8 +1,5 @@
 ---
 layout: base
-comments: true
-# other options
----
 ---
 
 {% include post.html post=page link_title=false %}
@@ -10,3 +7,5 @@ comments: true
 {% include about.html %}
 
 {% include related.html post=page %}
+
+{% if site.disqus-shortname %}{% include disqus.html %}{% endif %}
