@@ -16,6 +16,7 @@ comments: true
 
 
 > ## Data and Process Mining
+
 ---
 
 1.1 Data Science and Big data
@@ -52,6 +53,7 @@ Moore's law에 따르면 반도체 집적회로의 성능이 24개월마다 2배
 빅데이터의 정의로서 많이 사용하는 용어가 3V 또는 4V인데 다음과 같다. 1. VOLUME : Data Size 2. VELOCITY : Speed of Change 3. VARIETY : Different forms of Data Sources 4. VERACITY : Uncertainty of Data
 
 이에 대한 자세한 내용은 다른 곳을 참고하기 바란다.
+
 
 > ### What is the best that can happen?
 
