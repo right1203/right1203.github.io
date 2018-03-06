@@ -1,3 +1,12 @@
+---
+layout: post
+title: "Titaninc:Machine Learning from Disaster"
+subtitle: "Kaggle Study"
+categories: study
+tags: kaggle
+comments: true
+---
+> ## <span style="color:red">Exploration in Titanic</span>
 
 # **Introduction**
 * Titanic: Machine Learning from Disaster
