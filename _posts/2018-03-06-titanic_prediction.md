@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Titaninc:Machine Learning from Disaster"
+title: "3. 캐글 - 타이타닉 생존자 "
 subtitle: "Kaggle Study"
 categories: study
 tags: kaggle
