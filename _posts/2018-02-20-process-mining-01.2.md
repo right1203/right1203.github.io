@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Process Mining 02"
+title: "프로세스  02"
 subtitle: "Process Mining - Coursera"
 categories: study
 tags: lecture
