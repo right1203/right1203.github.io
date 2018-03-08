@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "2. Leaf Classification"
+title: "2. 캐글 - 잎사귀 예측 "
 subtitle: "캐글 무작정 따라해보기"
 categories: study
 tags: kaggle
