@@ -6,7 +6,7 @@ categories: study
 tags: lecture
 comments: true
 ---
-{TOC}
+{:TOC}
 
 
 # 파이썬 기초
