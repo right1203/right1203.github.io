@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "1. New York City Taxi Trip Duration"
+title: "1. 캐글 - 뉴욕 택시여행 기간 예측"
 subtitle: "캐글 무작정 따라해보기"
 categories: study
 tags: kaggle
