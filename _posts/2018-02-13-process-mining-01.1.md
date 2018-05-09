@@ -6,7 +6,9 @@ categories: study
 tags: lecture
 comments: true
 ---
-> ## Introduction
+> ## <span style="color:red">Introduction</span>
+
+<br/>
 
 개인적으로 진행하는 스터디에서도, 학교에서도 여러가지 경로를 통해 접해보면서 **프로세스 마이닝을 이벤트 로그를 이용하여 프로세스 모델을 규명하고 문제점을 찾아서 해결하는 것** 정도로만 생각해왔다.
 
@@ -15,9 +17,9 @@ comments: true
 구글링을 해보니 Coursera에서 Wil van der Aalst라는 네덜란드 출신의 Eindhoven 대학 교수님이 강의하신 [Process Mining: Data Science in Action](https://www.coursera.org/learn/process-mining/)이 유명한 것 같아 공부하면서 블로그에 정리해볼 것이다.
 
 
-> ## Data and Process Mining
+> ## <span style="color:red">Data and Process Mining</span>
 
----
+<br/>
 
 1.1 Data Science and Big data
 -----------------------------
@@ -32,7 +34,7 @@ Moore's law에 따르면 반도체 집적회로의 성능이 24개월마다 2배
 
 만약 Moore's law가 다른 영역에 적용된다면 어떻게 될까?
 
-1.	40년 전, 네덜란드의 Eindhoven에서 Amsterdam까지 가는데 기차로 1.5시간이 걸렸다고 한다. 그렇다면 40년이 지난 지금은 무어의 법칙이 성립한다면 얼마가 걸리는가?
+1.	40년 전, 네덜란드의 Eindhoven에서 Am sterdam까지 가는데 기차로 1.5시간이 걸렸다고 한다. 그렇다면 40년이 지난 지금은 무어의 법칙이 성립한다면 얼마가 걸리는가?
 
 > 답은 1.5 * 60(분) * 60(초) * $ {2}^{20} $ = 0.00515 seconds 이다.
 
