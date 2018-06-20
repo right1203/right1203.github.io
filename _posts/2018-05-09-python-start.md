@@ -82,6 +82,7 @@ print(int(b))
 print(float(a))
 ```
 
+
     a의 값은 15이고, a의 타입은 <class 'int'>입니다.
     b의 값은 15.3이고, b의 타입은 <class 'float'>입니다.
     c의 값은 30.3이고, c의 타입은 <class 'float'>입니다.
