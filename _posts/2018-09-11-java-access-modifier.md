@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Java #1 플랫폼 독립성]"
+title: "[Java #1] 플랫폼 독립성"
 subtitle: "Java 공부"
 categories: study
 tags: java

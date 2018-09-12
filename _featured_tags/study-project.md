@@ -1,7 +1,7 @@
 ---
 layout: tag-blog
-title: Java
-slug: java
+title: Project
+slug: project
 category: study
 menu: false
 order: 4
