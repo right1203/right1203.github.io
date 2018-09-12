@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "[감성 분석 #1] 프로젝트 계획"
-subtitle: "Java 공부"
+subtitle: "감성 분석"
 categories: study
-tags: java
+tags: project
 comments: true
 ---
 
