@@ -31,7 +31,7 @@ GCP 링크 : https://console.cloud.google.com
 
 사이트에 접속하면 우측 상단에 다음과 같이 무료로 크레딧을 줍니다.
 
-![1](/_posts/assets/2018-09-30-gcp-datalab/1.PNG)
+![1](/assets/2018-09-30-gcp-datalab/1.PNG)
 
 그리고 진행되는 사항에 따라 이름, 도시, 주소, 전화번호, 신용카드 정보를 입력하시면 됩니다.
 
@@ -45,7 +45,7 @@ CPU와 메모리, 저장 공간 등은 GCP를 활성화하면 바로 할당 받�
 
 이번에는 GPU 중 그나마 가격이 저렴한 NVIDIA의 Tesla K80 GPU를 할당 받아보겠습니다.
 
-![2](./_posts/assets/2018-09-30-gcp-datalab/2.PNG)
+![2](/assets/2018-09-30-gcp-datalab/2.PNG)
 
 우선 위와 같이 좌측 상단의 네비게이션 바를 선택하여 메뉴 창을 여시고, 'IAM 및 관리자' 카테고리의 할당량을 선택해줍니다.
 
@@ -55,8 +55,8 @@ CPU와 메모리, 저장 공간 등은 GCP를 활성화하면 바로 할당 받�
 
 하지만 계정 업그레이드 버튼을 클릭만 하면 위와 같이 계정이 업그레이드 됩니다! (왜 하라는건지?)
 
-![4](/_posts/assets/2018-09-30-gcp-datalab/4.PNG)
-![5](/_posts/assets/2018-09-30-gcp-datalab/5.PNG)
+![4](/assets/2018-09-30-gcp-datalab/4.PNG)
+![5](/assets/2018-09-30-gcp-datalab/5.PNG)
 
 상단의 위치를 **us-east1**으로 변경하고 할당량을 요청할 **K80**을 클릭하여 활성화 후 **+할당량 수정** 을 클릭합니다.
 (다른 위치여도 상관은 없습니다만, K80 GPU가 존재하고 상대적으로 가격이 저렴한 위치라 골랐습니다)
@@ -77,15 +77,15 @@ VM을 만드는 이유는 할당 받은 컴퓨터 자원을 효율적으로 분�
 
 VM 인스턴스를 생성해보겠습니다.
 
-![6](/_posts/assets/2018-09-30-gcp-datalab/6.PNG)
+![6](/assets/2018-09-30-gcp-datalab/6.PNG)
 
 위와 같은 창에서 Compute Engine을 선택합니다. 만약 이 창이 뜨지 않는다면, 좌측 상단의 메뉴 창을 선택하고 Compute Engine을 선택하면 됩니다.
 
-![7](/_posts/assets/2018-09-30-gcp-datalab/7.PNG)
+![7](/assets/2018-09-30-gcp-datalab/7.PNG)
 
 VM 인스턴스를 만들어줍시다.
 
-![8](/_posts/assets/2018-09-30-gcp-datalab/8.PNG)
+![8](/assets/2018-09-30-gcp-datalab/8.PNG)
 
 저는 위와 같이 설정하였습니다.
 
