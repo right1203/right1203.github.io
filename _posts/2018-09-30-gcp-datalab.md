@@ -45,11 +45,11 @@ CPU와 메모리, 저장 공간 등은 GCP를 활성화하면 바로 할당 받�
 
 이번에는 GPU 중 그나마 가격이 저렴한 NVIDIA의 Tesla K80 GPU를 할당 받아보겠습니다.
 
-![2](/_posts/assets/2018-09-30-gcp-datalab/2.PNG)
+![2](./_posts/assets/2018-09-30-gcp-datalab/2.PNG)
 
 우선 위와 같이 좌측 상단의 네비게이션 바를 선택하여 메뉴 창을 여시고, 'IAM 및 관리자' 카테고리의 할당량을 선택해줍니다.
 
-![3](/_posts/assets/2018-09-30-gcp-datalab/3.PNG)
+![3](/assets/2018-09-30-gcp-datalab/3.PNG)
 
 할당량 증가를 요청하려면 업그레이드 해야한다고 나옵니다.
 
