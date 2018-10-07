@@ -49,14 +49,14 @@ CPU와 메모리, 저장 공간 등은 GCP를 활성화하면 바로 할당 받�
 
 우선 위와 같이 좌측 상단의 네비게이션 바를 선택하여 메뉴 창을 여시고, 'IAM 및 관리자' 카테고리의 할당량을 선택해줍니다.
 
-![3](/assets/post-image/img/2018-09-30-gcp-datalab/3.png)
+![3](/assets/post-image/2018-09-30-gcp-datalab/3.png)
 
 할당량 증가를 요청하려면 업그레이드 해야한다고 나옵니다.
 
 하지만 계정 업그레이드 버튼을 클릭만 하면 위와 같이 계정이 업그레이드 됩니다! (왜 하라는건지?)
 
-![4](/assets/post-image/img/2018-09-30-gcp-datalab/4.png)
-![5](/assets/post-image/img/2018-09-30-gcp-datalab/5.png)
+![4](/assets/post-image//2018-09-30-gcp-datalab/4.png)
+![5](/assets/post-image//2018-09-30-gcp-datalab/5.png)
 
 상단의 위치를 **us-east1**으로 변경하고 할당량을 요청할 **K80**을 클릭하여 활성화 후 **+할당량 수정** 을 클릭합니다.
 (다른 위치여도 상관은 없습니다만, K80 GPU가 존재하고 상대적으로 가격이 저렴한 위치라 골랐습니다)
@@ -206,7 +206,7 @@ sudo apt-get -y install docker-ce
 ```
 
 ![14](/assets/post-image/2018-09-30-gcp-datalab/14.png)
-***출처: nvidia-docker github***
+출처: [nvidia-docker github](https://github.com/NVIDIA/nvidia-docker)
 
 명령어를 한 줄씩 복사해서 실행시키면 됩니다.
 오류 없이 제대로 실행된다면 docker라는 프로그램이 설치된 것인데요, docker는 가상화와 비슷하지만 조금 다른 개념입니다.
