@@ -31,7 +31,7 @@ GCP 링크 : https://console.cloud.google.com
 
 사이트에 접속하면 우측 상단에 다음과 같이 무료로 크레딧을 줍니다.
 
-![1](/assets/img/2018-09-30-gcp-datalab/1.PNG)
+![1](/assets/post-image/2018-09-30-gcp-datalab/1.png)
 
 그리고 진행되는 사항에 따라 이름, 도시, 주소, 전화번호, 신용카드 정보를 입력하시면 됩니다.
 
@@ -45,18 +45,18 @@ CPU와 메모리, 저장 공간 등은 GCP를 활성화하면 바로 할당 받�
 
 이번에는 GPU 중 그나마 가격이 저렴한 NVIDIA의 Tesla K80 GPU를 할당 받아보겠습니다.
 
-![2](/assets/img/2018-09-30-gcp-datalab/2.PNG)
+![2](/assets/post-image/2018-09-30-gcp-datalab/2.png)
 
 우선 위와 같이 좌측 상단의 네비게이션 바를 선택하여 메뉴 창을 여시고, 'IAM 및 관리자' 카테고리의 할당량을 선택해줍니다.
 
-![3](/assets/img/img/2018-09-30-gcp-datalab/3.PNG)
+![3](/assets/post-image/img/2018-09-30-gcp-datalab/3.png)
 
 할당량 증가를 요청하려면 업그레이드 해야한다고 나옵니다.
 
 하지만 계정 업그레이드 버튼을 클릭만 하면 위와 같이 계정이 업그레이드 됩니다! (왜 하라는건지?)
 
-![4](/assets/img/img/2018-09-30-gcp-datalab/4.PNG)
-![5](/assets/img/img/2018-09-30-gcp-datalab/5.PNG)
+![4](/assets/post-image/img/2018-09-30-gcp-datalab/4.png)
+![5](/assets/post-image/img/2018-09-30-gcp-datalab/5.png)
 
 상단의 위치를 **us-east1**으로 변경하고 할당량을 요청할 **K80**을 클릭하여 활성화 후 **+할당량 수정** 을 클릭합니다.
 (다른 위치여도 상관은 없습니다만, K80 GPU가 존재하고 상대적으로 가격이 저렴한 위치라 골랐습니다)
@@ -79,15 +79,15 @@ VM을 만드는 이유는 할당 받은 컴퓨터 자원을 효율적으로 분�
 
 VM 인스턴스를 생성해보겠습니다.
 
-![6](/assets/img/2018-09-30-gcp-datalab/6.PNG)
+![6](/assets/post-image/2018-09-30-gcp-datalab/6.png)
 
 위와 같은 창에서 Compute Engine을 선택합니다. 만약 이 창이 뜨지 않는다면, 좌측 상단의 메뉴 창을 선택하고 Compute Engine을 선택하면 됩니다.
 
-![7](/assets/img/2018-09-30-gcp-datalab/7.PNG)
+![7](/assets/post-image/2018-09-30-gcp-datalab/7.png)
 
 VM 인스턴스를 만들어줍시다.
 
-![8](/assets/img/2018-09-30-gcp-datalab/8.PNG)
+![8](/assets/post-image/2018-09-30-gcp-datalab/8.png)
 
 저는 위와 같이 설정하였습니다.
 
@@ -110,11 +110,11 @@ OS는 가장 환경이 잘 구축되어있는 Ubuntu 16.04 LTS를 선택하였�
 
 이제 VM에 할당한 GPU를 제대로 동작하도록 하기 위해서는 GPU Driver를 설치해야 하는데요, 우선 VM의 우분투 OS에 접근해보겠습니다.
 
-![9](/assets/img/2018-09-30-gcp-datalab/9.PNG)
+![9](/assets/post-image/2018-09-30-gcp-datalab/9.png)
 
 위와 같은 연결 탭에 보시면 SSH 연결, gcloud 명령 보기 등의 연결 방법이 있습니다. 가장 파워풀한 것은 Google Cloud SDK라고 하는 도구를 설치하여 gcloud 명령어로 연결하는 것이 좋지만, 이번에는 별도의 설치 없이 간단히 진행하기 위해 SSH 버튼을 클릭하여 브라우저에서 연결해보겠습니다.
 
-![10](/assets/img/2018-09-30-gcp-datalab/10.PNG)
+![10](/assets/post-image/2018-09-30-gcp-datalab/10.png)
 
 Welcome to Ubuntu 라는 말과 함께 연결이 되었습니다. 이제 CLI 환경에서 VM 인스턴스를 제어해야하는데요, GPU Driver를 설치하는 명령어는 다음과 같습니다.
 (여기서부터는 아래 참고문헌의 사이트에 기록된 내용을 가져온 것입니다)
@@ -138,7 +138,7 @@ apt-get(우분투의 패키지 관리 도구)의 변경사항을 적용하고, c
 
 <br/>
 
-![11](/assets/img/2018-09-30-gcp-datalab/11.PNG)
+![11](/assets/post-image/2018-09-30-gcp-datalab/11.png)
 
 ```
 nvidia-smi
@@ -156,11 +156,11 @@ cuDNN이 tensorflow에 있어서 필수적인 패키지인 것은 확실한데, 
 우선 [Nvidia Developer Program](https://developer.nvidia.com/developer-program)에 회원가입 후 Join을 합니다.
 그 후 [cuDNN 다운로드 사이트](https://developer.nvidia.com/rdp/cudnn-download)에서 tensorflow에서 지원하는 버전 중 CUDA와 호환되는 파일을 받아야 합니다.
 
-![12](/assets/img/2018-09-30-gcp-datalab/12.PNG)
+![12](/assets/post-image/2018-09-30-gcp-datalab/12.png)
 
 위와 같은 화면에서 Runtime 버전과 Developer 버전을 모두 받습니다.
 
-![13](/assets/img/2018-09-30-gcp-datalab/13.PNG)
+![13](/assets/post-image/2018-09-30-gcp-datalab/13.png)
 
 이제 인스턴스에 파일을 업로드해야 하는데, 우측 상단의 설정 아이콘을 클릭하면 파일 업로드가 있습니다. 두 파일 모두 업로드해야 합니다.
 
@@ -205,7 +205,7 @@ sudo apt-get -y update
 sudo apt-get -y install docker-ce
 ```
 
-![14](/assets/img/2018-09-30-gcp-datalab/14.PNG)
+![14](/assets/post-image/2018-09-30-gcp-datalab/14.png)
 ***출처: nvidia-docker github***
 
 명령어를 한 줄씩 복사해서 실행시키면 됩니다.
@@ -254,13 +254,13 @@ passwd()
 
 이제 네트워크를 고정IP로 변경하고 방화벽에서 tcp의 8888 포트만 개방하면 됩니다. 다시 GCP로 돌아와서 네비게이션 바의 'VPC 네트워크-외부IP주소'를 클릭합니다.
 
-![15](/assets/img/2018-09-30-gcp-datalab/15.PNG)
+![15](/assets/post-image/2018-09-30-gcp-datalab/15.png)
 
 다음과 같이 VM 인스턴스의 IP가 임시로 되어있는 것을 고정으로 변경합니다. 이후 'VPC 네트워크-방화벽 규칙'로 접속합니다.
 
 여기서도 '+방화벽 규칙 만들기'를 클릭하고 다음과 같이 설정하신 후 만들면 됩니다.
 
-![16](/assets/img/2018-09-30-gcp-datalab/16.PNG)
+![16](/assets/post-image/2018-09-30-gcp-datalab/16.png)
 
 모든 환경 설정이 드디어 끝났습니다.
 
