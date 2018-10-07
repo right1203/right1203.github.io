@@ -31,7 +31,7 @@ GCP 링크 : https://console.cloud.google.com
 
 사이트에 접속하면 우측 상단에 다음과 같이 무료로 크레딧을 줍니다.
 
-![1](/assets/2018-09-30-gcp-datalab/1.PNG)
+![1](/_post/assets/1.PNG)
 
 그리고 진행되는 사항에 따라 이름, 도시, 주소, 전화번호, 신용카드 정보를 입력하시면 됩니다.
 
