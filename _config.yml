@@ -13,12 +13,12 @@ url:                 https://right1203.github.io
 baseurl:             ""
 
 # A very short description of your page
-tagline:             데이터 분석 블로그
+tagline:
 
 # A short description of the page, used in the sidebar and as fallback for the meta description tag.
 # Markdown enabled, but don't use more than one paragraph (enforced by `>`)
 description:         >
-  안녕하세요 :) 공부한 내용을 정리하기 위한 블로그입니다.
+  안녕하세요 :) 데이터 분석을 공부하는 블로그입니다.
 
 # This should be the same author as first entry in `_data/authors.yml`
 author:
